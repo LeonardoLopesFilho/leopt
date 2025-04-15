@@ -6,12 +6,12 @@
     <v-container class="py-10">
       <v-card
         elevation="6"
-        max-width="20%"
+        max-width="30%"
         class="mx-auto mb-8"
         style="background-color: #1a6f62; border: 1px solid #1a6f62"
       >
         <v-card-text class="text-white text-center">
-          <h2>Meus Projetos</h2>
+          <h2>Meus Conhecimentos</h2> 
         </v-card-text>
       </v-card>
 

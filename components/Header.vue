@@ -15,7 +15,7 @@
       <v-col cols="8" class="d-flex justify-end">
         <v-btn text href="#sobre-mim"><b>Sobre Mim</b></v-btn>
         <v-btn text href="#projetos"><b>Projetos</b></v-btn>
-        <v-btn text href="#projetos"><b>Tecnologias</b></v-btn>
+        <v-btn text href="#conhecimento"><b>Conhecimento</b></v-btn>
         <v-btn text href="#contato"><b>Contato</b></v-btn>
       </v-col>
     </v-row>

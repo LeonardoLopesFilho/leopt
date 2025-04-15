@@ -8,6 +8,9 @@
       <div id="projetos">
         <ProjetosCard />
       </div>
+      <div id="conhecimento">
+        <TecnologiasCard />
+      </div>
       <div id="contato">
         <ContatoCard />
       </div>
