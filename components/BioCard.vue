@@ -1,20 +1,20 @@
 <template>
   <v-main
     class="d-flex justify-center"
-    style="background-color: #003b3a; min-height: 100vh"
+    style="background-color: #003b3a; min-height: 110vh"
   >
     <v-row>
       <v-col cols="11" sm="10" md="12" class="d-flex justify-center mx-auto">
         <v-card
           elevation="6"
-          max-width="700"
-          max-height="340"
+          :max-width="700"
+          :style="{
+            backgroundColor: '#1a6f62',
+            border: '1px solid #1a6f62',
+            marginTop: '-50px',
+            maxHeight: isMobile ? 'auto' : '340px',
+          }"
           class="pa-1 mt-10"
-          style="
-            background-color: #1a6f62;
-            border: 1px solid #1a6f62;
-            margin-top: -50px;
-          "
         >
           <v-card-text class="text-white text-center">
             <h2>Sobre Mim</h2>
@@ -60,4 +60,9 @@
 </template>
 
 <script setup lang="ts">
+  const isMobile = ref(window.innerWidth <= 600);
+
+  window.addEventListener("resize", () => {
+    isMobile.value = window.innerWidth <= 600;
+  });
 </script>
