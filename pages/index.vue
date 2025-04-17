@@ -1,18 +1,30 @@
 <template>
   <div>
     <v-app>
-      <Header />
-      <div id="sobre-mim">
-        <BioCard />
+      <div v-if="isLoading" class="loading-container">
+        <v-progress-circular indeterminate color="primary" size="64" />
       </div>
-      <div id="projetos">
-        <ProjetosCard />
-      </div>
-      <div id="conhecimento">
-        <TecnologiasCard />
-      </div>
-      <div id="contato">
-        <ContatoCard />
+
+      <div v-else>
+        <Header />
+        <div id="sobre-mim">
+          <BioCard />
+        </div>
+        <div id="projetos">
+          <ProjetosCard />
+        </div>
+        <div id="conhecimento">
+          <TecnologiasCard />
+        </div>
+        <div id="variedade">
+          <VariedadeCard />
+        </div>
+        <div id="contato">
+          <ContatoCard />
+        </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     </v-app>
 
@@ -22,16 +34,32 @@
       class="whatsapp-float"
       aria-label="Converse pelo WhatsApp"
     >
-      <v-img src="/img/whatsappwhite.png" alt="WhatsApp" width="30"  />
+      <v-img src="/img/whatsappwhite.png" alt="WhatsApp" width="30" />
     </a>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const isLoading = ref(true);
+
+  onMounted(() => {
+    setTimeout(() => {
+      isLoading.value = false;
+    }, 1000); // você pode ajustar esse tempo ou usar uma verificação real
+  });
+</script>
 
 <style>
   html {
     scroll-behavior: smooth;
+  }
+
+  .loading-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003b3a;
   }
 
   .whatsapp-float {

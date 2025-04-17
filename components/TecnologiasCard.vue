@@ -3,100 +3,123 @@
     class="d-flex justify-center"
     style="background-color: #003b3a; min-height: 100vh"
   >
-    <v-container class="py-10">
+    <v-container class="py-1">
       <v-card
         elevation="6"
-        max-width="30%"
+        max-width="700"
+        max-height="340"
         class="mx-auto mb-8"
         style="background-color: #1a6f62; border: 1px solid #1a6f62"
       >
+        <v-card-title class="text-white text-center"
+          ><b>Meus Conhecimentos</b></v-card-title
+        >
         <v-card-text class="text-white text-center">
-          <h2>Meus Conhecimentos</h2> 
+          <p>
+            Vale ressaltar que minha experiência não se limita a essas
+            ferramentas, e estou sempre aprendendo e me adaptando a novas
+            tecnologias.
+          </p>
         </v-card-text>
       </v-card>
 
-      <v-row>
-        <v-col
-          v-for="(projeto, index) in projetos"
-          :key="index"
-          cols="12"
-          sm="6"
-          md="4"
-        >
-          <v-card
-            elevation="6"
-            class="pa-4"
-            style="
-              background-color: #1a6f62;
-              border: 1px solid #1a6f62;
-              height: 100%;
-            "
-          >
-            <v-img
-              :src="projeto.imagem"
-              height="160"
-              cover
-              class="mb-4 rounded"
-            ></v-img>
-            <v-card-title class="text-white text-h6">
-              {{ projeto.titulo }}
-            </v-card-title>
-            <v-card-text class="text-white">
-              {{ projeto.descricao }}
-            </v-card-text>
-            <v-card-actions>
-              <v-btn
-                :href="projeto.link"
-                target="_blank"
-                class="text-white"
-                variant="text"
-              >
-                Ver Projeto
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
+      <div class="d-flex justify-center my-10">
+        <v-card class="pa-6 text-center" max-width="900" color="#1a6f62">
+          <v-row>
+            <v-col
+              v-for="tech in technologies"
+              :key="tech.name"
+              cols="3"
+              class="d-flex justify-center align-center"
+            >
+              <div class="text-center">
+                <v-tooltip bottom>
+                  <template #activator="{ props }">
+                    <v-img
+                      v-bind="props"
+                      :src="tech.icon"
+                      width="60"
+                      height="60"
+                      class="mx-auto mb-2"
+                      contain
+                    ></v-img>
+                  </template>
+                  <span>{{ tech.name }}</span>
+                </v-tooltip>
+              </div>
+            </v-col>
+          </v-row>
+        </v-card>
+      </div>
     </v-container>
   </v-main>
 </template>
 <script setup lang="ts">
-  const projetos = [
+  const technologies = [
     {
-      titulo: "CRM - SDCRM",
-      descricao:
-        "Sistema completo de gerenciamento de clientes, com módulos adicionais voltados à organização e otimização de processos internos da empresa.",
-      link: "https://app.sdcrm.com.br/",
-      imagem: "/img/SDCRM.png",
+      name: "Vue.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
     },
     {
-      titulo: "Eccomerce Certificado Digital",
-      descricao:
-        "Integrei a equipe responsável pela construção do e-commerce da Senha Digital Soluções Digitais.",
-      link: "https://senhadigital.com.br/",
-      imagem: "/img/SITE.png",
+      name: "Nuxt.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",
     },
     {
-      titulo: "Meu Portfólio",
-      descricao:
-        "Integrei a equipe responsável pela construção do e-commerce da Senha Digital Soluções Digitais.",
-      link: "http://localhost:3000/",
-      imagem: "/img/PORTIFOLIO.png",
+      name: "Node.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     },
     {
-      titulo: "SDC - Sistema de Consulta",
-      descricao:
-        "Sistema desenvolvido para realizar consultas completas de CPF e CNPJ, oferecendo informações relevantes como score de crédito, dados cadastrais e outras análises importantes. A ferramenta foi projetada para auxiliar empresas na tomada de decisão com base em dados confiáveis e atualizados..",
-      link: "https://app.sdconsulta.com.br/",
-      imagem: "/img/SDC.png",
+      name: "MongoDB",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     },
     {
-      titulo: "LP - CWL Construtora",
-      descricao:
-        "Landing page institucional desenvolvida para apresentar a CWL Construtora. O site destaca informações sobre a empresa, seus serviços, missão e formas de contato, com um layout limpo, responsivo e voltado para conversão de visitantes em potenciais clientes.",
-      link: "https://cwlconstrutora.com.br/",
-      imagem: "/img/CWL.png",
+      name: "AWS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+    },
+    {
+      name: "TypeScript",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    },
+    {
+      name: "JavaScript",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
+      name: "HTML5",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    },
+    {
+      name: "CSS3",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    },
+    {
+      name: "Git",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    },
+    {
+      name: "WordPress",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+    },
+    {
+      name: "Ubuntu",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg",
+    },
+    {
+      name: "PHP",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+    },
+    {
+      name: "Vuetify",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    },
+    {
+      name: "AWS Lambda",
+      icon: "https://www.svgrepo.com/show/448267/aws-lambda.svg",
     },
   ];
-  defineProps();
 </script>
+<style scoped></style>

@@ -3,10 +3,11 @@
     class="d-flex justify-center"
     style="background-color: #003b3a; min-height: 100vh"
   >
-    <v-container class="py-10">
+    <v-container class="py-1">
       <v-card
         elevation="6"
-        max-width="20%"
+        max-width="700"
+        max-height="340"
         class="mx-auto mb-8"
         style="background-color: #1a6f62; border: 1px solid #1a6f62"
       >
@@ -79,7 +80,7 @@
     {
       titulo: "Meu Portfólio",
       descricao:
-        "Integrei a equipe responsável pela construção do e-commerce da Senha Digital Soluções Digitais.",
+        "Projeto desenvolvido para apresentar minhas habilidades, experiências e projetos pessoais.",
       link: "http://localhost:3000/",
       imagem: "/img/PORTIFOLIO.png",
     },
@@ -98,5 +99,4 @@
       imagem: "/img/CWL.png",
     },
   ];
-  defineProps();
 </script>

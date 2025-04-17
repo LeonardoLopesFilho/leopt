@@ -1,7 +1,7 @@
 <template>
-  <NuxtLayout>
+  <v-app>
     <NuxtPage />
-  </NuxtLayout>
+  </v-app>
 </template>
 
 <script setup lang="ts">
