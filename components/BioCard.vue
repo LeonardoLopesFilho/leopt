@@ -12,7 +12,7 @@
             backgroundColor: '#1a6f62',
             border: '1px solid #1a6f62',
             marginTop: '-50px',
-            maxHeight: isMobile ? 'auto' : '340px',
+            maxHeight: 'none',
           }"
           class="pa-1 mt-10"
         >
@@ -45,6 +45,7 @@
                     height="200"
                     class="rounded-circle"
                     cover
+                    style="position: relative; z-index: 1"
                   />
                 </div>
               </v-col>
