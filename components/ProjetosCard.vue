@@ -101,14 +101,14 @@
     {
       titulo: "ML - Lista de Compra",
       descricao:
-        "Site Simples Para Lista Compras, desenvolvido para facilitar o usuario ao fazer as compras do mês e nas suas contas.",
+        "Aplicativo prático e intuitivo para organizar sua lista de compras mensais, ajudando você a controlar gastos e otimizar suas compras de forma fácil e rápida.",
       link: "https://lista-mercado-eta.vercel.app/",
       imagem: "/img/ListaMercado.png",
     },
     {
       titulo: "SDSIGN - Sistema de Assinatura",
       descricao:
-        "Participei do time de Desenvolvimento do sistema de Assinatura, o sistema integra modulos de assinatura, gestão de transferencia de veiculos, integrado com o DETRAN/RJ.",
+        "Atuei no desenvolvimento do SDSIGN, um sistema integrado que abrange módulos de assinatura digital e gestão de transferência de veículos, com integração direta ao DETRAN/RJ para maior eficiência e segurança.",
       link: "https://sdsolucoes.com.br/sdsign.html",
       imagem: "/img/sdsign.png",
     },
