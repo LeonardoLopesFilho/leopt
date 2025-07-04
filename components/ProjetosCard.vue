@@ -98,5 +98,19 @@
       link: "https://cwlconstrutora.com.br/",
       imagem: "/img/CWL.png",
     },
+    {
+      titulo: "ML - Lista de Compra",
+      descricao:
+        "Site Simples Para Lista Compras, desenvolvido para facilitar o usuario ao fazer as compras do mês e nas suas contas.",
+      link: "https://lista-mercado-eta.vercel.app/",
+      imagem: "/img/ListaMercado.png",
+    },
+    {
+      titulo: "SDSIGN - Sistema de Assinatura",
+      descricao:
+        "Participei do time de Desenvolvimento do sistema de Assinatura, o sistema integra modulos de assinatura, gestão de transferencia de veiculos, integrado com o DETRAN/RJ.",
+      link: "https://sdsolucoes.com.br/sdsign.html",
+      imagem: "/img/sdsign.png",
+    },
   ];
 </script>
