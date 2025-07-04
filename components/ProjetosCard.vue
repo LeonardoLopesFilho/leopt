@@ -71,7 +71,7 @@
       imagem: "/img/SDCRM.png",
     },
     {
-      titulo: "Eccomerce Certificado Digital",
+      titulo: "E-commerce Certificado Digital",
       descricao:
         "Integrei a equipe responsável pela construção do e-commerce da Senha Digital Soluções Digitais.",
       link: "https://senhadigital.com.br/",
