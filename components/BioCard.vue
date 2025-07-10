@@ -54,7 +54,13 @@
         </v-card>
       </v-col>
       <v-col cols="12" class="d-flex justify-center">
-        <v-btn color="primary">Meu Currículo</v-btn>
+        <v-btn
+          color="primary"
+          :href="'/Leonardo_Pimentel_CV.pdf'"
+          target="_blank"
+        >
+          Meu Currículo</v-btn
+        >
       </v-col>
     </v-row>
   </v-main>
