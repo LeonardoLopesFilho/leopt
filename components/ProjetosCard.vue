@@ -112,5 +112,12 @@
       link: "https://sdsolucoes.com.br/sdsign.html",
       imagem: "/img/sdsign.png",
     },
+    {
+      titulo: "LP - CCNA Colombo",
+      descricao:
+        "Site institucional desenvolvido para a Igreja Cristã Nova Aliança - Colombo, apresentando informações sobre a igreja, seus ministérios, eventos e formas de contato, com um design acolhedor e responsivo.",
+      link: "https://ccna-two.vercel.app/",
+      imagem: "/img/ccna.png",
+    },
   ];
 </script>
