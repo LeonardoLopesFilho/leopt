@@ -85,10 +85,11 @@
     { titulo: "O Fim da Morte", capa: "/img/ofimdamorte.jpg" },
     { titulo: "Floresta Sombria", capa: "/img/darkflorest.jpg" },
     { titulo: "Apocalipse", capa: "/img/apocalipse.jpg" },
+    { titulo: "Devoradores de Estrelas", capa: "/img/devoradores.jpg" },
   ];
 
   const livroAtual = {
-    titulo: "Devoradores de Estrelas",
-    capa: "/img/devoradores.jpg",
+    titulo: "Cartas de um diabo a seu aprendiz",
+    capa: "/img/cartas.jpg",
   };
 </script>
