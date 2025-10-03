@@ -87,6 +87,7 @@ const livrosLidos = [
   { titulo: "Apocalipse", capa: "/img/apocalipse.jpg" },
   { titulo: "Devoradores de Estrelas", capa: "/img/devoradores.jpg" },
   { titulo: "Cartas de um diabo a seu aprendiz", capa: "/img/cartas.jpg" },
+  { titulo: "Sombra do Paraiso", capa: "/img/sombra.jpg" },
 ];
 
 const livroAtual = {
