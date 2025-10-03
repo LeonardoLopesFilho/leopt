@@ -80,16 +80,17 @@
 </template>
 
 <script setup lang="ts">
-  const livrosLidos = [
-    { titulo: "O Problema dos 3 Corpos", capa: "/img/3body.jpg" },
-    { titulo: "O Fim da Morte", capa: "/img/ofimdamorte.jpg" },
-    { titulo: "Floresta Sombria", capa: "/img/darkflorest.jpg" },
-    { titulo: "Apocalipse", capa: "/img/apocalipse.jpg" },
-    { titulo: "Devoradores de Estrelas", capa: "/img/devoradores.jpg" },
-  ];
+const livrosLidos = [
+  { titulo: "O Problema dos 3 Corpos", capa: "/img/3body.jpg" },
+  { titulo: "O Fim da Morte", capa: "/img/ofimdamorte.jpg" },
+  { titulo: "Floresta Sombria", capa: "/img/darkflorest.jpg" },
+  { titulo: "Apocalipse", capa: "/img/apocalipse.jpg" },
+  { titulo: "Devoradores de Estrelas", capa: "/img/devoradores.jpg" },
+  { titulo: "Cartas de um diabo a seu aprendiz", capa: "/img/cartas.jpg" },
+];
 
-  const livroAtual = {
-    titulo: "Cartas de um diabo a seu aprendiz",
-    capa: "/img/cartas.jpg",
-  };
+const livroAtual = {
+  titulo: "A Janela de Overton",
+  capa: "/img/janela.jpg",
+};
 </script>
